@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #f3f5f9;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar {
+  width: 200px;
+  height: 100%;
+  background: #007514;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2 {
+  color: #fff;
+  font-size: 18px;
+  font-family: arial;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+  color: #ffffff;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas {
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+  background-color:#138026;
+}
+
+.wrapper .sidebar ul li:hover a {
+  color: #fff;
+}
+
+.wrapper .sidebar .social_media {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a {
+  display: block;
+  width: 40px;
+  background: #138026;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #ffffff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content {
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header {
+  padding: 20px;
+  font-size: 35px;
+  background: #fff;
+  color: #454545;
+  border-bottom: 5px black #000000;
+}
+
+.wrapper .main_content .info {
+  margin: 20px;
+  color: #454545;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div {
+  margin-bottom: 20px;
+}
+
+/* contact */
+/* .contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #415a77;
+}
+
+.contact .box-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact .box-contact h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  margin-right: 70px;
+}
+
+.contact .box-contact form table tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .box-contact form table tr td label {
+  font-size: 28px;
+  color: white;
+}
+
+.contact .box-contact form table tr td input {
+  width: 600px;
+  height: 85px;
+  margin-top: 30px;
+}
+
+.contact .box-contact form table tr td textarea {
+  margin-top: 10px;
+  padding: 15px 200px 200px 20px;
+} */
+
+/* from */
+.form-container {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.form-container label {
+  font-size: 16px;
+  color: #333333;
+  display: block;
+  margin-bottom: 5px;
+}
+.form-container input[type="text"],
+.form-container input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.form-container button[type="submit"] {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+.form-container button[type="reset"] {
+  background-color: #f44336;
+  color: #ffffff;
+}
+.form-container button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.form-container button[type="reset"]:hover {
+  background-color: #e53935;
+}
+
+
+/*SEARCH ENGINE*/
+
+.wrapper .main_content .info .search-container {
+  display: flex;
+  justify-content: flex-end; /* Posisikan ke kanan */
+  margin: 20px;
+  position: relative; /* Untuk menempatkan tombol reset di dalam input */
+}
+
+/* Style untuk input kolom pencarian */
+.wrapper .main_content .info .search-input {
+  width: 310px;
+  padding: 10px 25px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  font-size: 13px;
+  outline: none;
+  transition: all 0.3s ease;
+  padding-right: 100px; /* Tambahkan ruang untuk tombol reset */
+}
+
+/* Style untuk input saat fokus */
+.wrapper .main_content .info .search-input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Style untuk tombol pencarian */
+.wrapper .main_content .info .search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 18px;
+  background-color: #007BFF;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style untuk tombol pencarian saat hover */
+.wrapper .main_content .info .search-icon:hover {
+  color: #007BFF;
+}
+
+/* Style untuk tombol reset */
+.reset-button {
+  position: absolute;
+  right: 70px; /* Sesuaikan posisi agar sesuai dengan padding-right input */
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ccc;
+  outline: none;
+  display: none; /* Tersembunyi secara default */
+}
+
+/* Tampilkan tombol reset saat input tidak kosong */
+.search-input:not(:placeholder-shown) + .reset-button {
+  display: inline;
+}
+
+/* Style untuk tombol reset saat hover */
+.reset-button:hover {
+  color: #007BFF;
+}
